@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(229deg, #87ceeb, #00bfff, #1e90ff, #4169e1, #191970, #000080, #000033, #191970, #483d8b, #000033, #000033, #191970);
+  background-size: 2400% 2400%;
+
+  -webkit-animation: AnimationName 39s ease infinite;
+  -moz-animation: AnimationName 39s ease infinite;
+  -o-animation: AnimationName 39s ease infinite;
+  animation: AnimationName 39s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+.caixaFundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.layout {
+  position: absolute;
+  top: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 50px;
+  max-width: 500px;
+  width: 100%;
+  justify-content: space-around;
+  color: rgba(255, 250, 250, 0.836);
+  background-color: rgba(17, 12, 12, 0.514);
+  border-radius: 15px;
+  border-color: rgba(0, 255, 255, 0.562);
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box-maior {
+  background: rgba(0, 0, 0, 0.658);
+  opacity: 0.8;
+  color: snow;
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.box-menor {
+  display: flex;
+  align-items: center;
+}
+p, h2{
+  margin: 8px;
+}
+button {
+  background-color: transparent;
+  border: 2px solid orange;
+  border-radius: 5px;
+  color: orange;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+}
+input{
+  height: 30px;
+  text-align: center;
+}
+.texto-previsao {
+  text-transform: capitalize;
+}
