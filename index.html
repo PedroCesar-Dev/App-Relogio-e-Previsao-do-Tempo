@@ -9,38 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <title></title>
 </head>
-<body>
-    <div class="caixaFundo">              
-        <div id="relogio" class="layout">
-            <div>
-                <span id="horas">00</span>
-                <span class="tempo">Horas</span>
+<body>             
+        <div class="box">
+            <div class="search">
+                <input type="text" class="input-cidade" placeholder="Cidade"><br>
+                <button type="button" onclick="pesquisar()" class="btn">Buscar</button>
             </div>
-
-            <div>
-                <span id="minutos">00</span>
-                <span class="tempo">Minutos</span>
+            <div class="locationData">
+                <h2 class="selectedCity"></h2>
+                <h2 class="selectedCountry"></h2>
+                <h2 class="selectedTimeZone"></h2>
+                <p class="temp"></p>
+                <p class="temp-Min"></p>
+                <p class="temp-Max"></p>                
+                <p class="humidity"></p>
+                <p class="tempFeeling"></p>
             </div>
-
-            <div>
-                <span id="segundos">00</span>
-                <span class="tempo">Segundos</span>
-            </div>
-        </div>
-        <div class="box-maior">
-            <input type="text" class="input-cidade" placeholder="Cidade">
-            <button type="button" onclick="pesquisar()" class="btn">Buscar</button>
-            <div class="box-medio">
-                <h2 class="titulo-previsao">Cidade:</h2>
-                <p class="graus">Temperatura:</p>
-                <div class="box-menor">
-                    <p class="texto-previsao">Clima:</p>
-                    <img src="" class="img-previsao" alt="">
+            
+            <div class="weatherData">
+                <div id="relogio" class="layout">
+                    <div>
+                        <span id="horas"></span>
+                        <span class="tempo"></span>
+                    </div>
+                    <div>
+                        <span id="minutos"></span>
+                        <span class="tempo"></span>
+                    </div>
+                    <div>
+                        <span id="segundos"></span>
+                        <span class="tempo"></span>
+                    </div>
                 </div>
+                <p class="weatherDescription"></p>
+                <img src="" class="img-previsao" alt="">
+                <p class="cloudAmount"></p>
+                <p class="windSpeed"></p>
+                <p class="windDirection"></p>
             </div>
-            <p class="umidade">Umidade:</p>
+
+            
         </div>
-    </div>
     <script src="./assets/js/weather.js"></script>
 </body>
 </html>
